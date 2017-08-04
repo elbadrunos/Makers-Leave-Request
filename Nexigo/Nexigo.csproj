@@ -129,6 +129,7 @@
     <Content Include="js\views\demo\grid\grid_template.js" />
     <Content Include="js\views\demo\grid\table.js" />
     <Content Include="js\views\demo\lab.js" />
+    <Content Include="js\views\demo\labs\employeeHistory.js" />
     <Content Include="js\views\demo\labs\formLeave.js" />
     <Content Include="js\views\demo\labs\formApproval.js" />
     <Content Include="js\views\demo\labs\lab-ccai.js" />
@@ -138,6 +139,7 @@
     <Content Include="js\views\demo\labs\lab4.js" />
     <Content Include="js\views\demo\labs\lab5.js" />
     <Content Include="js\views\demo\labs\leaverequest.js" />
+    <Content Include="js\views\demo\labs\TabSupervisor.js" />
     <Content Include="js\views\demo\labs\tasklist.js" />
     <Content Include="js\views\demo\list.js" />
     <Content Include="js\views\demo\liveedit.js" />

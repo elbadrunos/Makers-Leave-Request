@@ -144,6 +144,13 @@
                 }, {
                     link: 'demo/labs/tasklist',
                     text: 'TaskList View'
+                }, {
+                    link: 'demo/labs/employeeHistory',
+                    text: 'History Karyawan'
+                },
+                {
+                    link: 'demo/labs/TabSupervisor',
+                    text: 'Tab Supervisor '
                 }
             ]
         },

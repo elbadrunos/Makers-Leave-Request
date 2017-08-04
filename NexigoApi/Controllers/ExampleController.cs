@@ -15,28 +15,30 @@ namespace NexigoApi.Controllers
         [HttpGet]
         public string GetText()
         {
-            return "only text";
+            return "Only text";
+            //return GetNumber().ToString();
         }
+
         [HttpGet]
         public int GetNumber()
         {
-            return 555;
+            return 55555;
         }
 
         [HttpPost]
-        public dynamic GetGridData()
+        public GridModel GetGridData()
         {
             Customer c1 = new Customer
             {
                 Name = "Nama1",
-                Address = "alamat1"
+                Address = "Alamat1"
             };
             Customer c2 = new Customer
             {
-                Name = "Nama2",
-                Address = "alamat2"
+                Name = "Nama 2",
+                Address = "Alamat 2"
             };
-            List<Customer> listC = new List<Customer>;
+            List<Customer> listC = new List<Customer>();
             listC.Add(c1);
             listC.Add(c2);
 
@@ -45,13 +47,28 @@ namespace NexigoApi.Controllers
                 data = listC,
                 total = 2
             };
+
             return gridData;
-
         }
-        [HttpPost]
-        //public List<SelectModel> GetSelects()
-        //{
 
-        //}
+        [HttpPost]
+        public List<SelectModel> GetDropdownList()
+        {
+            var select1 = new SelectModel
+            {
+                value = "nilai 1",
+                text = "tulisan 1"
+            };
+            var select2 = new SelectModel
+            {
+                value = "nilai 2",
+                text = "tulisan 2"
+            };
+            var ddlList = new List<SelectModel>();
+            ddlList.Add(select1);
+            ddlList.Add(select2);
+
+            return ddlList;
+        }
     }
 }
